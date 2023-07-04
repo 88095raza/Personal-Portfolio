@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/6a155730a9.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" alt="" class="logo"> -->
+                <p class="port">Portfolio</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li> 
+                    <i style="font-size:20px" class="fa" onclick="closemenu()">&#xf00d;</i>     
+                </ul>
+                <i style="font-size:20px" class="fa" onclick="openmenu()">&#xf0c9;</i>
+            </nav>
+            <div class="header-text">
+                <h1 class="ml10">
+                    <span class="text-wrapper">
+                      <span class="letters">Front-End Devloper</span>
+                    </span>
+                  </h1>
+                <!-- <p class="typing">Front-End Developer</p> -->
+                <!-- <span class="typed-cursor" aria-hidden="true">|</span> -->
+                <h1>Hi, I'am <br> <span>Nooman</span> Raza</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------about------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/Aboutme.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle1">About Me</h1>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae cum 
+                         consequatur fuga veniam ducimus explicabo vero ipsam.</p>
+                         fugiat debitis nulla? Officia, doloremque. Animi, provident veritatis dolorem soluta ratione eius, nisi, 
+
+                        <div class="subtitle2">
+                            <p class="tablink active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tablink "onclick="opentab('experience')">Experience</p>
+                            <p class="tablink "onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Devlopment</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>Web fvev</span><br>Web app Devlopment</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Btech Third Year(current)</li>
+                            </ul>
+                        </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------services--------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle1">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Harum eligendi amet itaque suscipit quas deserunt, fuga, sit ducimus !</p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Harum eligendi amet itaque suscipit quas deserunt, fuga, sit ducimus !</p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Harum eligendi amet itaque suscipit quas deserunt, fuga, sit ducimus !</p>
+                     <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <div class="subtitle1">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Capture.PNG">
+
+                <div class="layer">
+                    <h3>A* path Finding Algorithm</h3>
+                    <p>on working <br>Find the shortest path Between two node</p>
+                    <a href="https://github.com/88095raza/Shortest_path_visualizer">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>-------------- </h3>
+                    <p>Working on it</p>
+                    <a href="">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>--------------- </h3>
+                    <p>on working it</p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------------contact------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="column-left">
+                <div class="subtitle1">Contact Me</div>
+                <p><i class="fa-solid fa-paper-plane"></i>noomanraza987@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8809529277</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/nooman-raza-26baa0202/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a  href="cv/Nooman's Resume.pdf" class="btn btn2" download>Downlode CV</a>
+            </div>
+           
+            <div class="column-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class=" btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+            <p>copyright © Nooman Raza</p>
+    </div>
+</div>
+    <script src="hex.js"></script>
+</body>
+</html>
